@@ -1,11 +1,11 @@
-var map = L.map('map').setView([37.7, -122.4], 10);
+var map = L.map('map').setView([37.7, -122.4], 11);
 
 // Load a tile layer
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
   subdomains: 'abcd',
   minZoom: 0,
-  maxZoom: 20,
+  maxZoom: 19,
   ext: 'png'
 }).addTo(map);
 
@@ -22,5 +22,5 @@ $.getJSON("https://raw.githubusercontent.com/orhuna/WebGIS_SLU_M1/main/Module%20
 
 var ratIcon = L.icon({
   iconUrl: 'http://maptimeboston.github.io/leaflet-intro/rat.gif',
-  iconSize: [50, 40]
+  iconSize: [45, 40]
 });
